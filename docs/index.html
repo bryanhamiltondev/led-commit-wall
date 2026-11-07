@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LED Commit Wall - demo</title>
+<link rel="stylesheet" href="../src/led-commit-wall.css">
+<style>
+  body { background: #16181d; color: #e9edf1; font-family: system-ui, sans-serif; margin: 0; padding: 48px 20px; }
+  .bay { max-width: 1040px; margin: 0 auto; border: 1px solid #2b2f39; background: #1d2027; border-radius: 14px; padding: 26px 22px; }
+  h2 { color: #00d2ff; font: 600 15px/1.4 ui-monospace, monospace; letter-spacing: .18em; text-transform: uppercase; margin: 0 0 16px; }
+  .lcw-total { color: #00d2ff; }
+  p { color: #9aa3ae; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="bay" data-led-wall>
+  <h2>LED Bay &mdash; Commit Activity</h2>
+  <p>Live from GitHub: the last 365 days of commits. Every lit LED is a shipped day.</p>
+  <div class="lcw-wrap">
+    <div class="lcw-grid" data-username="bryanhamiltondev" role="img" aria-label="GitHub contribution heatmap, last 12 months"></div>
+  </div>
+  <div class="lcw-foot">
+    <span class="lcw-legend">LESS <i class="lcw-led lcw-l0"></i><i class="lcw-led lcw-l1"></i><i class="lcw-led lcw-l2"></i><i class="lcw-led lcw-l3"></i><i class="lcw-led lcw-l4"></i> MORE</span>
+    <span class="lcw-total"></span>
+  </div>
+</div>
+<script src="../src/led-commit-wall.js"></script>
+</body>
+</html>
